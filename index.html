@@ -1,385 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hiten Rajguru — Web · UI/UX · Graphic Designer</title>
-  <meta name="description" content="Portfolio of Hiten Rajguru — Web Designer, UI/UX Designer and Graphic Designer." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Hiten Rajguru, a web designer, UI/UX designer, and graphic designer."
+    />
+    <title>Hiten Rajguru | Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="site-texture" aria-hidden="true"></div>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-  <!-- Page loader -->
-  <div class="loader" id="loader">
-    <span class="loader-text">HR<span class="blink">_</span></span>
-  </div>
-
-  <!-- Cursor glow (desktop only) -->
-  <div class="cursor-glow" id="cursorGlow"></div>
-
-  <!-- ===================== NAVBAR ===================== -->
-  <header class="nav" id="nav">
-    <a href="#home" class="nav-logo">
-      <span class="logo-mark">H</span>iten<span class="accent">.</span>
-    </a>
-
-    <nav class="nav-links" id="navLinks">
-      <a href="#home" class="nav-link active">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#services" class="nav-link">What I Do</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link nav-cta">Contact <i class="bi bi-arrow-up-right"></i></a>
-    </nav>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
-
-  <main>
-
-    <!-- ===================== HERO ===================== -->
-    <section class="hero" id="home">
-      <div class="hero-inner">
-
-        <div class="hero-text">
-          <p class="eyebrow reveal-load" style="--d:.1s"><span class="eyebrow-dot"></span> Hello, it's me</p>
-          <h1 class="hero-name reveal-load" style="--d:.25s">Hiten<br />Rajguru</h1>
-          <div class="hero-role reveal-load" style="--d:.4s">
-            <span class="role-static">And I'm a</span>
-            <span class="role-dynamic" id="typedRole"></span><span class="type-caret">|</span>
-          </div>
-          <p class="hero-desc reveal-load" style="--d:.55s">
-            I design digital experiences that feel effortless — from pixel-perfect
-            interfaces and intuitive user flows to bold visual identities that
-            make brands unforgettable.
-          </p>
-          <div class="hero-actions reveal-load" style="--d:.7s">
-            <a href="#projects" class="btn btn-primary">View my work <i class="bi bi-arrow-down"></i></a>
-            <a href="#contact" class="btn btn-ghost">Let's talk</a>
-          </div>
-          <div class="hero-socials reveal-load" style="--d:.85s">
-            <a href="mailto:hello@hitenrajguru.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
-            <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="https://behance.net/your-handle" target="_blank" rel="noopener" aria-label="Behance"><i class="bi bi-behance"></i></a>
-            <a href="https://github.com/your-handle" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal-load" style="--d:.5s">
-          <div class="hex-wrap">
-            <!-- Rotating circular badge -->
-            <svg class="circle-badge" viewBox="0 0 200 200" aria-hidden="true">
-              <defs>
-                <path id="circlePath" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
-              </defs>
-              <text>
-                <textPath href="#circlePath">WEB DESIGNER • UI/UX DESIGNER • GRAPHIC DESIGNER •</textPath>
-              </text>
-            </svg>
-
-            <div class="hex-glow"></div>
-            <div class="hex-border">
-              <div class="hex-photo">
-                <!-- Replace this placeholder with: <img src="Assets/profile.jpg" alt="Hiten Rajguru" /> -->
-                <div class="photo-placeholder">
-                  <i class="bi bi-person"></i>
-                  <span>Your photo here</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="float-chip chip-1"><i class="bi bi-vector-pen"></i> UI/UX</div>
-            <div class="float-chip chip-2"><i class="bi bi-window"></i> Web</div>
-            <div class="float-chip chip-3"><i class="bi bi-palette"></i> Graphic</div>
-          </div>
-        </div>
-
-      </div>
-
-      <a href="#about" class="scroll-hint" aria-label="Scroll down">
-        <span class="mouse"><span class="wheel"></span></span>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Hiten Rajguru home">
+        <span class="brand-mark">HR</span>
+        <span>Portfolio</span>
       </a>
-    </section>
 
-    <!-- ===================== MARQUEE ===================== -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Web Design <i class="bi bi-asterisk"></i> UI/UX Design <i class="bi bi-asterisk"></i> Graphic Design <i class="bi bi-asterisk"></i> Branding <i class="bi bi-asterisk"></i> Prototyping <i class="bi bi-asterisk"></i>&nbsp;</span>
-        <span>Web Design <i class="bi bi-asterisk"></i> UI/UX Design <i class="bi bi-asterisk"></i> Graphic Design <i class="bi bi-asterisk"></i> Branding <i class="bi bi-asterisk"></i> Prototyping <i class="bi bi-asterisk"></i>&nbsp;</span>
-      </div>
-    </div>
+      <nav class="site-nav" data-nav aria-label="Primary navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
 
-    <!-- ===================== ABOUT ===================== -->
-    <section class="section about" id="about">
-      <div class="section-head reveal">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> About me</p>
-        <h2>Designing with <span class="accent">purpose</span>,<br />building with passion.</h2>
-      </div>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+    </header>
 
-      <div class="about-grid">
-        <div class="about-card reveal" style="--d:.05s">
-          <p>
-            I'm <strong>Hiten Rajguru</strong> — a multidisciplinary designer who lives at the
-            intersection of aesthetics and usability. Whether it's a full website, a mobile
-            app flow, or a brand identity, my goal is the same: design that works as
-            beautifully as it looks.
+    <main>
+      <section class="hero section-shell" id="home">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Hello, I am</p>
+          <h1>Hiten Rajguru</h1>
+          <p class="hero-role">
+            <span>Creative</span>
+            <strong data-typewriter>Web Designer</strong>
           </p>
-          <p>
-            I believe great design is invisible — it guides, delights and never gets in
-            the way. Every project starts with understanding people, then shaping ideas
-            into clean, functional and memorable experiences.
+          <p class="hero-copy">
+            I design modern websites, clean user interfaces, and visual identities that feel
+            sharp, useful, and memorable across every screen.
           </p>
-          <a href="#" class="btn btn-ghost btn-sm">Download CV <i class="bi bi-download"></i></a>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              <i class="bi bi-grid-1x2"></i>
+              View Work
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              <i class="bi bi-send"></i>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="social-row" aria-label="Social links">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.behance.net/" target="_blank" rel="noreferrer" aria-label="Behance">
+              <i class="bi bi-behance"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="about-stats">
-          <div class="stat reveal" style="--d:.1s">
-            <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Years designing</span>
+        <div class="hero-visual reveal" data-tilt>
+          <div class="hex-frame">
+            <div class="hex-grid"></div>
+            <div class="profile-placeholder">
+              <span>HR</span>
+            </div>
           </div>
-          <div class="stat reveal" style="--d:.2s">
-            <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Projects crafted</span>
+          <div class="floating-badge badge-one">
+            <i class="bi bi-vector-pen"></i>
+            UI/UX
           </div>
-          <div class="stat reveal" style="--d:.3s">
-            <span class="stat-num" data-count="3">0</span><span class="stat-plus"></span>
-            <span class="stat-label">Design disciplines</span>
+          <div class="floating-badge badge-two">
+            <i class="bi bi-code-slash"></i>
+            Web
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ===================== SERVICES ===================== -->
-    <section class="section services" id="services">
-      <div class="section-head reveal">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> What I do</p>
-        <h2>Three crafts, <span class="accent">one vision</span>.</h2>
-      </div>
-
-      <div class="services-grid">
-        <article class="service-card reveal" style="--d:.05s">
-          <div class="service-icon"><i class="bi bi-window-desktop"></i></div>
-          <h3>Web Design</h3>
-          <p>Modern, responsive websites designed to load fast, look sharp on every screen and turn visitors into fans.</p>
-          <span class="service-tag">Landing pages · Portfolios · Business sites</span>
-        </article>
-
-        <article class="service-card reveal featured" style="--d:.15s">
-          <div class="service-icon"><i class="bi bi-phone"></i></div>
-          <h3>UI/UX Design</h3>
-          <p>Research-driven interfaces and user flows — wireframes to polished prototypes that people actually enjoy using.</p>
-          <span class="service-tag">Wireframes · Prototypes · Design systems</span>
-        </article>
-
-        <article class="service-card reveal" style="--d:.25s">
-          <div class="service-icon"><i class="bi bi-brush"></i></div>
-          <h3>Graphic Design</h3>
-          <p>Bold visual identities, social creatives and print design that make brands instantly recognisable.</p>
-          <span class="service-tag">Branding · Posters · Social media</span>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===================== SKILLS ===================== -->
-    <section class="section skills" id="skills">
-      <div class="section-head reveal">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> My toolkit</p>
-        <h2>Software I <span class="accent">speak fluently</span>.</h2>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill reveal" style="--d:.05s">
-          <div class="skill-top"><i class="bi bi-bezier2"></i><span>Figma</span><em>90%</em></div>
-          <div class="skill-bar"><span style="--w:90%"></span></div>
+        <div class="hero-metrics reveal" aria-label="Portfolio highlights">
+          <div>
+            <strong>03+</strong>
+            <span>Design Roles</span>
+          </div>
+          <div>
+            <strong>12</strong>
+            <span>Tools & Skills</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Responsive Focus</span>
+          </div>
         </div>
-        <div class="skill reveal" style="--d:.1s">
-          <div class="skill-top"><i class="bi bi-images"></i><span>Adobe Photoshop</span><em>85%</em></div>
-          <div class="skill-bar"><span style="--w:85%"></span></div>
+      </section>
+
+      <section class="about section-shell" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Designing digital work that looks clean and feels easy.</h2>
         </div>
-        <div class="skill reveal" style="--d:.15s">
-          <div class="skill-top"><i class="bi bi-pen"></i><span>Adobe Illustrator</span><em>80%</em></div>
-          <div class="skill-bar"><span style="--w:80%"></span></div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal" data-tilt>
+            <div class="mini-display">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="about-monogram">H</div>
+          </div>
+
+          <div class="about-copy reveal">
+            <p>
+              I am a web designer, UI/UX designer, and graphic designer focused on building
+              polished digital experiences. My work blends layout, typography, color, motion,
+              and usability so every page has a clear purpose and a strong visual personality.
+            </p>
+            <p>
+              This portfolio is ready for websites, case studies, PDF projects, videos,
+              prototypes, and brand visuals. The current project cards are placeholders so your
+              real work can be added inside the <strong>Assets</strong> folder later.
+            </p>
+
+            <div class="about-tags">
+              <span>Responsive Design</span>
+              <span>Interface Design</span>
+              <span>Creative Direction</span>
+              <span>Brand Graphics</span>
+            </div>
+          </div>
         </div>
-        <div class="skill reveal" style="--d:.2s">
-          <div class="skill-top"><i class="bi bi-layers"></i><span>Adobe XD</span><em>75%</em></div>
-          <div class="skill-bar"><span style="--w:75%"></span></div>
+      </section>
+
+      <section class="services section-shell" id="services">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">What I Do</p>
+          <h2>Creative services for brands, products, and portfolios.</h2>
         </div>
-        <div class="skill reveal" style="--d:.25s">
-          <div class="skill-top"><i class="bi bi-filetype-html"></i><span>HTML / CSS</span><em>85%</em></div>
-          <div class="skill-bar"><span style="--w:85%"></span></div>
-        </div>
-        <div class="skill reveal" style="--d:.3s">
-          <div class="skill-top"><i class="bi bi-filetype-js"></i><span>JavaScript</span><em>70%</em></div>
-          <div class="skill-bar"><span style="--w:70%"></span></div>
-        </div>
-        <div class="skill reveal" style="--d:.35s">
-          <div class="skill-top"><i class="bi bi-camera-reels"></i><span>Canva</span><em>95%</em></div>
-          <div class="skill-bar"><span style="--w:95%"></span></div>
-        </div>
-        <div class="skill reveal" style="--d:.4s">
-          <div class="skill-top"><i class="bi bi-easel"></i><span>Wireframing & Prototyping</span><em>88%</em></div>
-          <div class="skill-bar"><span style="--w:88%"></span></div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ===================== PROJECTS ===================== -->
-    <section class="section projects" id="projects">
-      <div class="section-head reveal">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> Latest work</p>
-        <h2>Projects <span class="accent">loading…</span></h2>
-        <p class="section-sub">A curated collection is on its way. Here's a peek at what's cooking.</p>
-      </div>
-
-      <div class="projects-grid">
-        <!--
-          HOW TO ADD A REAL PROJECT LATER:
-          1. Put your image in the Assets folder, e.g. Assets/project1.jpg
-          2. Replace .project-placeholder with: <img src="Assets/project1.jpg" alt="Project name" />
-          3. Remove the "coming-soon" class and the badge if you want
-          4. Point the link href to your live site / PDF / prototype
-        -->
-
-        <a href="#" class="project-card coming-soon reveal" style="--d:.05s">
-          <div class="project-thumb">
-            <div class="project-placeholder"><i class="bi bi-window"></i></div>
-            <span class="badge-soon">Coming soon</span>
-          </div>
-          <div class="project-info">
-            <span class="project-type"><i class="bi bi-globe2"></i> Website</span>
-            <h3>E-commerce Landing Page</h3>
-            <p>Full responsive storefront design — currently in the oven.</p>
-          </div>
-        </a>
-
-        <a href="#" class="project-card coming-soon reveal" style="--d:.15s">
-          <div class="project-thumb">
-            <div class="project-placeholder"><i class="bi bi-phone"></i></div>
-            <span class="badge-soon">Coming soon</span>
-          </div>
-          <div class="project-info">
-            <span class="project-type"><i class="bi bi-cursor"></i> Prototype</span>
-            <h3>Food Delivery App — UI/UX</h3>
-            <p>Interactive Figma prototype, from user research to hi-fi screens.</p>
-          </div>
-        </a>
-
-        <a href="#" class="project-card coming-soon reveal" style="--d:.25s">
-          <div class="project-thumb">
-            <div class="project-placeholder"><i class="bi bi-file-earmark-pdf"></i></div>
-            <span class="badge-soon">Coming soon</span>
-          </div>
-          <div class="project-info">
-            <span class="project-type"><i class="bi bi-file-earmark-text"></i> Case Study (PDF)</span>
-            <h3>Brand Identity — Case Study</h3>
-            <p>Logo, palette and guidelines packed in a downloadable PDF.</p>
-          </div>
-        </a>
-
-        <a href="#" class="project-card coming-soon reveal" style="--d:.35s">
-          <div class="project-thumb">
-            <div class="project-placeholder"><i class="bi bi-palette"></i></div>
-            <span class="badge-soon">Coming soon</span>
-          </div>
-          <div class="project-info">
-            <span class="project-type"><i class="bi bi-brush"></i> Graphic Design</span>
-            <h3>Social Media Creative Pack</h3>
-            <p>A bold set of posts, stories and banners for a modern brand.</p>
-          </div>
-        </a>
-
-        <a href="#" class="project-card coming-soon reveal" style="--d:.45s">
-          <div class="project-thumb">
-            <div class="project-placeholder"><i class="bi bi-play-circle"></i></div>
-            <span class="badge-soon">Coming soon</span>
-          </div>
-          <div class="project-info">
-            <span class="project-type"><i class="bi bi-camera-video"></i> Motion / Video</span>
-            <h3>Animated Brand Showcase</h3>
-            <p>Short motion piece bringing a visual identity to life.</p>
-          </div>
-        </a>
-
-        <a href="#contact" class="project-card cta-card reveal" style="--d:.55s">
-          <div class="cta-card-inner">
+        <div class="card-grid service-grid">
+          <article class="service-card reveal">
+            <i class="bi bi-window-sidebar"></i>
+            <h3>Web Design</h3>
+            <p>Modern website layouts, landing pages, portfolios, and responsive visual systems.</p>
+          </article>
+          <article class="service-card reveal">
+            <i class="bi bi-bezier2"></i>
+            <h3>UI/UX Design</h3>
+            <p>Wireframes, user flows, app screens, clickable prototypes, and clean design systems.</p>
+          </article>
+          <article class="service-card reveal">
+            <i class="bi bi-palette"></i>
+            <h3>Graphic Design</h3>
+            <p>Brand visuals, social media posts, posters, thumbnails, and digital campaign assets.</p>
+          </article>
+          <article class="service-card reveal">
             <i class="bi bi-stars"></i>
-            <h3>Your project here?</h3>
-            <p>Let's create something worth showcasing.</p>
-            <span class="btn btn-primary btn-sm">Start a project <i class="bi bi-arrow-up-right"></i></span>
+            <h3>Motion Polish</h3>
+            <p>Subtle interactions, animated sections, hover states, and smooth scrolling effects.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section-shell" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Software Skills</p>
+          <h2>Tools I use to turn ideas into finished visuals.</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skill-panel reveal">
+            <h3>Design Tools</h3>
+            <div class="skill-list">
+              <span><i class="bi bi-diamond"></i> Figma</span>
+              <span><i class="bi bi-app-indicator"></i> Adobe XD</span>
+              <span><i class="bi bi-brush"></i> Photoshop</span>
+              <span><i class="bi bi-pen"></i> Illustrator</span>
+            </div>
           </div>
-        </a>
-      </div>
-    </section>
 
-    <!-- ===================== CONTACT ===================== -->
-    <section class="section contact" id="contact">
-      <div class="contact-card reveal">
-        <div class="contact-left">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Contact me</p>
-          <h2>Got an idea?<br /><span class="accent">Let's make it real.</span></h2>
-          <p class="contact-sub">I'm open to freelance projects, collaborations and full-time opportunities.</p>
+          <div class="skill-panel reveal">
+            <h3>Web Stack</h3>
+            <div class="skill-list">
+              <span><i class="bi bi-filetype-html"></i> HTML5</span>
+              <span><i class="bi bi-filetype-css"></i> CSS3</span>
+              <span><i class="bi bi-filetype-js"></i> JavaScript</span>
+              <span><i class="bi bi-bootstrap"></i> Bootstrap</span>
+            </div>
+          </div>
 
-          <div class="contact-lines">
-            <a href="mailto:hello@hitenrajguru.com" class="contact-line">
-              <i class="bi bi-envelope-paper"></i>
-              <span><small>Email</small>hello@hitenrajguru.com</span>
-            </a>
-            <a href="tel:+910000000000" class="contact-line">
-              <i class="bi bi-telephone"></i>
-              <span><small>Phone</small>+91 00000 00000</span>
-            </a>
-            <div class="contact-line">
-              <i class="bi bi-geo-alt"></i>
-              <span><small>Based in</small>India · Working worldwide</span>
+          <div class="skill-panel reveal">
+            <h3>Creative Media</h3>
+            <div class="skill-list">
+              <span><i class="bi bi-film"></i> After Effects</span>
+              <span><i class="bi bi-camera-reels"></i> Premiere Pro</span>
+              <span><i class="bi bi-layout-text-window"></i> Canva</span>
+              <span><i class="bi bi-globe2"></i> Webflow</span>
             </div>
           </div>
         </div>
 
-        <div class="contact-right">
-          <p class="find-me">Find me on</p>
-          <div class="social-grid">
-            <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener" class="social-tile">
-              <i class="bi bi-linkedin"></i><span>LinkedIn</span><i class="bi bi-arrow-up-right tile-arrow"></i>
-            </a>
-            <a href="https://behance.net/your-handle" target="_blank" rel="noopener" class="social-tile">
-              <i class="bi bi-behance"></i><span>Behance</span><i class="bi bi-arrow-up-right tile-arrow"></i>
-            </a>
-            <a href="https://github.com/your-handle" target="_blank" rel="noopener" class="social-tile">
-              <i class="bi bi-github"></i><span>GitHub</span><i class="bi bi-arrow-up-right tile-arrow"></i>
-            </a>
-            <a href="https://dribbble.com/your-handle" target="_blank" rel="noopener" class="social-tile">
-              <i class="bi bi-dribbble"></i><span>Dribbble</span><i class="bi bi-arrow-up-right tile-arrow"></i>
-            </a>
-            <a href="https://instagram.com/your-handle" target="_blank" rel="noopener" class="social-tile">
-              <i class="bi bi-instagram"></i><span>Instagram</span><i class="bi bi-arrow-up-right tile-arrow"></i>
-            </a>
-            <a href="https://x.com/your-handle" target="_blank" rel="noopener" class="social-tile">
-              <i class="bi bi-twitter-x"></i><span>X / Twitter</span><i class="bi bi-arrow-up-right tile-arrow"></i>
-            </a>
+        <div class="skill-bars reveal" aria-label="Skill focus">
+          <div class="bar-item">
+            <span>Visual Design</span>
+            <div class="bar"><i style="width: 92%"></i></div>
+          </div>
+          <div class="bar-item">
+            <span>UI/UX Thinking</span>
+            <div class="bar"><i style="width: 88%"></i></div>
+          </div>
+          <div class="bar-item">
+            <span>Front-End Layout</span>
+            <div class="bar"><i style="width: 84%"></i></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+      <section class="projects section-shell" id="projects">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Latest Projects</p>
+          <h2>Project slots ready for websites, PDFs, videos, and prototypes.</h2>
+        </div>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
-    <p>© <span id="year"></span> Hiten Rajguru — Designed & built with <i class="bi bi-heart-fill"></i></p>
-    <a href="#home" class="back-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
-  </footer>
+        <div class="project-grid">
+          <article class="project-card reveal" data-tilt>
+            <div class="project-thumb web-thumb">
+              <i class="bi bi-window"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Web Page</span>
+              <h3>Modern Portfolio Website</h3>
+              <p>Responsive portfolio concept with smooth animation and strong first impression.</p>
+              <a href="#" aria-label="Modern Portfolio Website coming soon">Coming Soon</a>
+            </div>
+          </article>
 
-  <script src="script.js"></script>
-</body>
+          <article class="project-card reveal" data-tilt>
+            <div class="project-thumb prototype-thumb">
+              <i class="bi bi-phone"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Prototype</span>
+              <h3>Mobile App UI Flow</h3>
+              <p>Clickable app prototype slot for user flows, screens, and interaction ideas.</p>
+              <a href="#" aria-label="Mobile App UI Flow coming soon">Coming Soon</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-thumb pdf-thumb">
+              <i class="bi bi-file-earmark-pdf"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-type">PDF Case Study</span>
+              <h3>Brand Identity Guide</h3>
+              <p>PDF project placeholder for logos, color systems, typography, and mockups.</p>
+              <a href="#" aria-label="Brand Identity Guide coming soon">Coming Soon</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-thumb graphics-thumb">
+              <i class="bi bi-images"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Graphics</span>
+              <h3>Social Media Design Pack</h3>
+              <p>Creative campaign visuals, post templates, thumbnails, and display graphics.</p>
+              <a href="#" aria-label="Social Media Design Pack coming soon">Coming Soon</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-thumb video-thumb">
+              <i class="bi bi-play-btn"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Video</span>
+              <h3>Motion Promo Reel</h3>
+              <p>Video slot for motion graphics, edits, reels, and animated brand content.</p>
+              <a href="#" aria-label="Motion Promo Reel coming soon">Coming Soon</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-thumb ux-thumb">
+              <i class="bi bi-kanban"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-type">UX Study</span>
+              <h3>Website Redesign Case</h3>
+              <p>Case study placeholder for research, wireframes, UI screens, and outcomes.</p>
+              <a href="#" aria-label="Website Redesign Case coming soon">Coming Soon</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact">
+        <div class="contact-layout">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact Me</p>
+            <h2>Have a website, interface, or design idea in mind?</h2>
+            <p>
+              Send a message for portfolio work, freelance design, UI/UX projects, or creative
+              collaboration.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:hitenrajguru@example.com">
+                <i class="bi bi-envelope"></i>
+                hitenrajguru@example.com
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                <i class="bi bi-linkedin"></i>
+                LinkedIn
+              </a>
+              <a href="https://www.behance.net/" target="_blank" rel="noreferrer">
+                <i class="bi bi-behance"></i>
+                Behance
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <i class="bi bi-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" data-contact-form>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="your@email.com" required />
+            </label>
+            <label>
+              <span>Project Type</span>
+              <select name="project">
+                <option>Web Design</option>
+                <option>UI/UX Design</option>
+                <option>Graphic Design</option>
+                <option>Other Creative Work</option>
+              </select>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">
+              <i class="bi bi-send"></i>
+              Send Message
+            </button>
+            <p class="form-note" data-form-note></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed and built by Hiten Rajguru.</p>
+      <p>&copy; <span data-year></span> All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
